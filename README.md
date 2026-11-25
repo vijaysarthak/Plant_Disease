@@ -1,8 +1,6 @@
 # 🌿 Plant Disease Advisor — the app
 
 **Action-Group Conformal Prediction for Safe Plant Disease Advisory under Lab-to-Field Shift**
-MCA Major Project (MCA_MP_22), Presidency University, Bengaluru
-Sarthak Vijay · Himanshu Kumar Singh · Arun Das · Sahil Kumar — guide: Ms Lekhya Sree
 
 A farmer uploads a photo of a leaf. The app does **not** just say "this is disease X". It asks
 *"Can I be sure which **treatment** is needed?"*
@@ -84,7 +82,7 @@ dir .\saved_model          # must show plant_model.onnx and model_info.json
 First time only:
 ```powershell
 cd C:\projects\plant_disease_advisor
-python -m venv .venv
+python -m venv myenv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
@@ -92,7 +90,7 @@ pip install -r requirements.txt
 Every time:
 ```powershell
 cd C:\projects\plant_disease_advisor
-.\.venv\Scripts\Activate.ps1
+.\myenv\Scripts\Activate.ps1
 streamlit run app/streamlit_app.py
 ```
 The browser opens http://localhost:8501. The sidebar shows which model is loaded and its scores.
