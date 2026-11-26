@@ -83,7 +83,7 @@ First time only:
 ```powershell
 cd C:\projects\plant_disease_advisor
 python -m venv myenv
-.\.venv\Scripts\Activate.ps1
+.\myenv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
